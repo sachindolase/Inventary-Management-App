@@ -1,0 +1,123 @@
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.add-item input {
+  margin: 5px;
+  padding: 5px;
+}
+
+.add-item button {
+  margin-left: 10px;
+}
+
+.item-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.item-table th, .item-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.item-table .low-stock {
+  background-color: #ffcccc;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 120px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #960000;
+}
+
+button {
+  background-color: #880101;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8d0101;
+}
+
+input, select {
+  padding: 8px;
+  margin: 5px 0;
+  width: 27%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #bdaa06;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+.low-stock {
+  background-color: #fdb6b6 !important;
+}
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th, td {
+    text-align: right;
+  }
+
+  td {
+    padding-left: 50%;
+    text-align: right;
+    position: relative;
+  }
+
+  td:before {
+    position: absolute;
+    left: 10px;
+    content: attr(data-label);
+    font-weight: bold;
+  }
+}
